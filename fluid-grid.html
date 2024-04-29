@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fluid Grid Demo</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Pacifico:regular" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Poppins:100,100italic,200,200italic,300,300italic,regular,italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic" rel="stylesheet" />
+</head>
+<body>
+    <div class="main-container">
+        <div class="text-container">
+            <h1 class="fluid-grid-header">Fluid Grids inom Responsiv Webbdesign</h1>
+            <p>Fluid grids är en hörnsten inom responsiv webbdesign, där målet är att skapa webbsidor som dynamiskt och smidigt anpassar sig efter olika skärmstorlekar. Genom att använda procentbaserade mått istället för fasta pixlar kan webbutvecklare säkerställa att en webbsidas layout bevarar sin struktur och proportioner oavsett vilken enhet som används.</p>
+            <b> Förklaring: </b>
+Ett fluid grid-system omdefinierar layoutparametrar i procentuella termer snarare än fasta mått. Detta tillvägagångssätt gör det möjligt för element på en webbsida att växa och krympa i relation till föräldercontainern snarare än att vara bundna till specifika pixelvärden. På så sätt behåller webbsidan sin designintegritet och användbarhet över en bred variation av enheter, från stora skärmar till mobiltelefoner.
+
+        </div>
+        <div class="code-container">
+            <p> Exempel på användning:</p>
+            <pre><code>
+                body { margin: 0; font-family: Arial, sans-serif; }
+                .container { display: flex; flex-wrap: wrap; padding: 10px; }
+                .box { flex: 1 1 200px; margin: 10px; padding: 20px; background: #007BFF; color: white; text-align: center; }
+                @media (max-width: 600px) {
+                  .box { flex: 1 1 100%; }
+                }
+            </code></pre>
+        </div>
+    </div>
+    <p> Kolla på videon för demonstrering av koden:</p>
+    <div class="video-container">
+        <!-- Din videospelare kommer här -->
+        <video controls width="100%">
+            <source src="Fluid-grid.mov" type="video/mp4">
+            Din webbläsare stöder inte HTML5-video.
+        </video>
+    </div>
+
+    <p class="reference">
+        Referenser:
+        <a href="https://abookapart.com/products/responsive-web-design" target="_blank" rel="noopener">Marcotte, E. (2011). Responsive Web Design. New York: A Book Apart.</a><br>
+    
+        <a href="https://css-tricks.com" target="_blank" rel="noopener">CSS-Tricks. (n.d.). CSS-Tricks.</a> Tillgänglig: [2024-04-24].<br>
+        
+        <a href="https://developer.mozilla.org" target="_blank" rel="noopener">Mozilla Developer Network. (n.d.). MDN Web Docs.</a> Tillgänglig: [2024-04-25].
+    </p>
+
+    <div class="button-container">
+        <a href="viewport.html" class="start-button">Gå vidare till nästa steg</a>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
